@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Cláudio Lanches | Cardápio Digital</title>
+  <meta name="description" content="Seu lanche do seu jeito. Confira o cardápio do Cláudio Lanches, personalize seu pedido e finalize pelo WhatsApp.">
+  <meta property="og:title" content="Cláudio Lanches | Cardápio Digital">
+  <meta property="og:description" content="Escolha seu lanche, capriche nos adicionais e faça seu pedido pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/produtos.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#cardapio">Pular para o cardápio</a>
+  <header class="topbar"><div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="Cláudio Lanches, início"><span class="brand-mark" aria-hidden="true">CL</span><span>Cláudio <strong>Lanches</strong></span></a>
+    <a class="whatsapp small" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+  </div></header>
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div><p class="eyebrow">CLÁUDIO LANCHES · CARDÁPIO DIGITAL</p><h1 id="hero-title">Seu lanche.<br><span>Do seu jeito.</span></h1><p class="hero-copy">Escolha seu favorito, capriche nos adicionais<br class="desktop-break"> e deixe o resto com a gente.</p><a class="button primary" href="#cardapio">Ver cardápio <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-seal" aria-hidden="true"><span>FEITO PARA MATAR</span><strong>A SUA<br>FOME.</strong><span>CLÁUDIO LANCHES</span></div>
+    </section>
+    <nav class="category-bar" aria-label="Categorias do cardápio"><div id="categories" class="container categories"></div></nav>
+    <section id="cardapio" class="container menu" aria-labelledby="menu-title"><div class="section-heading"><div><p class="eyebrow">ESCOLHA E APROVEITE</p><h2 id="menu-title">Nosso cardápio</h2></div><span id="product-count" class="muted"></span></div><div id="products"></div></section>
+    <noscript><p class="container">Ative o JavaScript no navegador para consultar os produtos e montar seu pedido.</p></noscript>
+  </main>
+  <footer class="container footer"><div class="brand">Cláudio <strong>Lanches</strong></div><div>Pedidos: <a id="footer-whatsapp"></a><span aria-hidden="true"> · </span><a id="footer-phone"></a></div><p>Seu lanche do seu jeito.</p></footer>
+  <div class="cart-dock"><button id="open-cart" class="primary cart-button" type="button"><span class="bag" aria-hidden="true">▣</span><span id="cart-label">Ver pedido · 0 itens</span><strong id="cart-total">R$ 0,00</strong><span aria-hidden="true">→</span></button></div>
+  <p id="status" class="toast" role="status" aria-live="polite"></p>
+  <dialog id="product-dialog" aria-labelledby="product-title"><div class="dialog-head"><p class="eyebrow">DO SEU JEITO</p><button class="icon-button" data-close="product-dialog" aria-label="Fechar personalização" type="button">×</button></div><h2 id="product-title"></h2><p id="product-description" class="muted"></p><p id="product-price" class="price"></p>
+    <form id="product-form"><div class="quantity-row"><span>Quantidade</span><div class="stepper"><button id="less" type="button" aria-label="Diminuir quantidade">−</button><output id="quantity" aria-live="polite">1</output><button id="more" type="button" aria-label="Aumentar quantidade">+</button></div></div><fieldset id="extras-field"><legend>Deixe ainda melhor</legend><p class="muted">Escolha seus adicionais. Valores por unidade.</p><div id="extras"></div></fieldset><label for="notes">Alguma observação?</label><textarea id="notes" maxlength="300" rows="3" placeholder="Ex.: sem cebola, sem tomate, maionese separada..."></textarea><p class="field-hint">Até 300 caracteres.</p><div id="item-summary" class="summary" aria-live="polite"></div><button id="save-item" class="primary full" type="submit">Adicionar ao pedido</button></form>
+  </dialog>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="dialog-head"><p class="eyebrow">QUASE NA HORA DE COMER</p><button class="icon-button" data-close="cart-dialog" aria-label="Fechar pedido" type="button">×</button></div><h2 id="cart-title">Seu pedido</h2><div id="cart-items"></div><button id="clear-cart" class="text-button" type="button">Limpar pedido</button><div class="total-row"><strong>Total dos produtos</strong><strong id="checkout-total"></strong></div><p class="field-hint">Taxa de entrega, quando aplicável, será confirmada pelo estabelecimento.</p><button id="checkout-button" class="primary full" type="button">Continuar para finalizar →</button><button class="secondary full" data-close="cart-dialog" type="button">Escolher mais produtos</button></dialog>
+  <dialog id="clear-dialog" aria-labelledby="clear-title"><h2 id="clear-title">Limpar seu pedido?</h2><p>Todos os itens serão removidos do carrinho.</p><button id="confirm-clear" class="primary full" type="button">Sim, limpar pedido</button><button class="secondary full" data-close="clear-dialog" type="button">Manter meu pedido</button></dialog>
+  <dialog id="checkout-dialog" aria-labelledby="checkout-title"><div class="dialog-head"><p class="eyebrow">ÚLTIMO PASSO</p><button class="icon-button" data-close="checkout-dialog" aria-label="Fechar finalização" type="button">×</button></div><h2 id="checkout-title">Como vamos entregar?</h2><form id="checkout-form" novalidate>
+    <label for="customer">Nome do cliente *</label><input id="customer" name="customer" autocomplete="name" maxlength="80" required aria-describedby="customer-error"><p class="error" id="customer-error"></p>
+    <label for="phone">Telefone <span class="muted">(opcional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="20">
+    <label for="receipt">Forma de recebimento</label><select id="receipt" name="receipt"><option value="Retirada">Retirada</option><option value="Entrega">Entrega</option></select>
+    <fieldset id="address-fields" hidden disabled><legend>Endereço de entrega</legend><label for="street">Rua *</label><input id="street" name="street" autocomplete="address-line1" maxlength="120" aria-describedby="street-error"><p class="error" id="street-error"></p><div class="form-grid"><div><label for="number">Número *</label><input id="number" name="number" maxlength="15" placeholder="123 ou s/n" aria-describedby="number-error"><p class="error" id="number-error"></p></div><div><label for="neighborhood">Bairro *</label><input id="neighborhood" name="neighborhood" maxlength="80" aria-describedby="neighborhood-error"><p class="error" id="neighborhood-error"></p></div></div><label for="complement">Complemento</label><input id="complement" name="complement" autocomplete="address-line2" maxlength="120"><label for="reference">Ponto de referência</label><input id="reference" name="reference" maxlength="120"></fieldset>
+    <p class="field-hint">Taxa de entrega, quando aplicável, será confirmada pelo estabelecimento.</p>
+    <label for="payment">Forma de pagamento</label><select id="payment" name="payment"><option value="PIX">PIX</option><option value="Cartão">Cartão</option><option value="Dinheiro">Dinheiro</option></select><div id="cash-fields" hidden><label for="needs-change">Precisa de troco?</label><select id="needs-change" name="needsChange"><option value="Não">Não</option><option value="Sim">Sim</option></select><div id="change-field" hidden><label for="change">Troco para quanto?</label><input id="change" name="change" inputmode="decimal" maxlength="12" placeholder="Ex.: 100,00" aria-describedby="change-error"><p class="error" id="change-error"></p></div></div>
+    <div class="total-row"><strong>Total dos produtos</strong><strong id="final-total"></strong></div><p id="checkout-error" class="error" role="alert"></p><button class="whatsapp full" type="submit">Enviar pedido pelo WhatsApp ↗</button><p class="field-hint">Você revisa a mensagem e confirma o envio no WhatsApp. O pedido só é confirmado pelo estabelecimento.</p>
+  </form></dialog>
+</body>
+</html>
