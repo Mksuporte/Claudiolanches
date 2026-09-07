@@ -1,0 +1,100 @@
+# Verificação local
+
+Chrome headless, arquivo local, 2026-09-07T14:33:37.906Z.
+Nenhuma mensagem enviada e nenhum deploy executado.
+
+Executados: 91 | Passaram: 91 | Falharam: 0
+
+- PASS: Logo oficial única no cabeçalho, com alt e link de início
+- PASS: Favicon e Apple Touch Icon usam o hambúrguer
+- PASS: 53 produtos e 6 adicionais renderizados em arquivo local
+- PASS: HTML: IDs únicos, labels e referências locais válidas
+- PASS: Carrinho vazio bloqueia finalização
+- PASS: Footer copyright and official logo without duplicate text or link
+- PASS: Sem rolagem horizontal em 320px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 320px
+- PASS: Rodapé centralizado e sem transbordamento em 320px
+- PASS: ProtechCore logo proportional and centered at 320px
+- PASS: Sem rolagem horizontal em 375px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 375px
+- PASS: Rodapé centralizado e sem transbordamento em 375px
+- PASS: ProtechCore logo proportional and centered at 375px
+- PASS: Sem rolagem horizontal em 390px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 390px
+- PASS: Rodapé centralizado e sem transbordamento em 390px
+- PASS: ProtechCore logo proportional and centered at 390px
+- PASS: Sem rolagem horizontal em 430px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 430px
+- PASS: Rodapé centralizado e sem transbordamento em 430px
+- PASS: ProtechCore logo proportional and centered at 430px
+- PASS: Sem rolagem horizontal em 768px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 768px
+- PASS: Rodapé centralizado e sem transbordamento em 768px
+- PASS: ProtechCore logo proportional and centered at 768px
+- PASS: Sem rolagem horizontal em 1280px
+- PASS: Logo proporcional, inteira e sem conflito com WhatsApp em 1280px
+- PASS: Rodapé centralizado e sem transbordamento em 1280px
+- PASS: ProtechCore logo proportional and centered at 1280px
+- PASS: X-salada + bacon + hambúrguer = R$ 32,50
+- PASS: Quantidade multiplica adicionais: R$ 65,00
+- PASS: Quantidade mínima é 1
+- PASS: Bebida não permite adicionais
+- PASS: Total do exemplo = R$ 44,50
+- PASS: Pedido em montagem está persistido
+- PASS: localStorage restaura itens e valores após atualizar
+- PASS: Observação especial permanece texto
+- PASS: Editar recalcula total = R$ 77,00
+- PASS: Nome obrigatório com erro próximo ao campo
+- PASS: Erro no nome preserva carrinho e localStorage
+- PASS: Recebimento fixo visível na finalização
+- PASS: Sem seletor de recebimento ou campos de endereço no DOM
+- PASS: Sem opção Entrega ou aviso de taxa na interface
+- PASS: Formulário só contém identificação e pagamento
+- PASS: Troco inválido rejeitado: ""
+- PASS: Troco inválido preserva pedido: ""
+- PASS: Troco inválido rejeitado: "abc"
+- PASS: Troco inválido preserva pedido: "abc"
+- PASS: Troco inválido rejeitado: "44,50"
+- PASS: Troco inválido preserva pedido: "44,50"
+- PASS: Troco inválido rejeitado: "40"
+- PASS: Troco inválido preserva pedido: "40"
+- PASS: Finalização remove apenas a chave do carrinho
+- PASS: Interface volta a zero antes de sair do site
+- PASS: Formulários voltam ao estado inicial
+- PASS: Mensagem preserva todos os itens e subtotais após limpeza
+- PASS: WhatsApp: dinheiro, troco, total, adicionais, observação e caracteres especiais
+- PASS: Dinheiro com troco: mensagem sempre contém Retirada no local
+- PASS: Dinheiro com troco: mensagem sem dados de entrega
+- PASS: PIX: retorno encontra pedido vazio
+- PASS: PIX: novo pedido pode ser iniciado e persistido
+- PASS: PIX: troco não solicitado fica desabilitado
+- PASS: Finalização remove apenas a chave do carrinho
+- PASS: Interface volta a zero antes de sair do site
+- PASS: Formulários voltam ao estado inicial
+- PASS: PIX: finalização sem troco
+- PASS: PIX: mensagem sempre contém Retirada no local
+- PASS: PIX: mensagem sem dados de entrega
+- PASS: Cartão: retorno encontra pedido vazio
+- PASS: Cartão: novo pedido pode ser iniciado e persistido
+- PASS: Cartão: troco não solicitado fica desabilitado
+- PASS: Finalização remove apenas a chave do carrinho
+- PASS: Interface volta a zero antes de sair do site
+- PASS: Formulários voltam ao estado inicial
+- PASS: Cartão: finalização sem troco
+- PASS: Cartão: mensagem sempre contém Retirada no local
+- PASS: Cartão: mensagem sem dados de entrega
+- PASS: Dinheiro: retorno encontra pedido vazio
+- PASS: Dinheiro: novo pedido pode ser iniciado e persistido
+- PASS: Dinheiro: troco não solicitado fica desabilitado
+- PASS: Finalização remove apenas a chave do carrinho
+- PASS: Interface volta a zero antes de sair do site
+- PASS: Formulários voltam ao estado inicial
+- PASS: Dinheiro: finalização sem troco
+- PASS: Dinheiro: mensagem sempre contém Retirada no local
+- PASS: Dinheiro: mensagem sem dados de entrega
+- PASS: Remover item recalcula total
+- PASS: Limpar exige confirmação
+- PASS: Limpar remove carrinho e persistência
+- PASS: Storage corrompido não interrompe aplicação
+
+A validação estrutural de HTML não substitui um validador de conformidade W3C.
