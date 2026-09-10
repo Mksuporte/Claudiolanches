@@ -213,7 +213,7 @@
     const lines = [`Olá! Gostaria de fazer um pedido no *${CONFIG.estabelecimento}* 🍔`, '', '*PEDIDO*', ''];
     for (const item of cart) {
       const product = findProduct(item.productId);
-      lines.push(`${item.quantity}x ${product.nome}${product.subcategoria ? ' · ' + product.subcategoria : ''}`, `Preço base: ${money(cents(product.preco))} cada`);
+      lines.push(`${item.quantity}- ${product.nome}${product.subcategoria ? ' · ' + product.subcategoria : ''}`, `Preço base: ${money(cents(product.preco))} cada`);
       if (item.extras.length) {
         lines.push('Adicionais por unidade:');
         for (const id of item.extras) lines.push(`+ ${findExtra(id).nome} — ${money(cents(findExtra(id).preco))}`);
