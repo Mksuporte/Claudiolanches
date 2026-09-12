@@ -587,6 +587,16 @@ const CARDAPIO = Object.freeze({
     "adicionaisPermitidos": false,
     "imagem": "",
     "ativo": true
+  },
+  {
+    "id": "adicionais-ovo",
+    "categoria": "adicionais",
+    "nome": "Ovo",
+    "descricao": "",
+    "preco": 2,
+    "adicionaisPermitidos": false,
+    "imagem": "",
+    "ativo": true
   }
 ]
 });

@@ -1,6 +1,6 @@
 # Cláudio Lanches — Cardápio Digital
 
-Cardápio estático em HTML, CSS e JavaScript puro, com 53 produtos, 6 adicionais, personalização, carrinho e finalização pelo WhatsApp. Sem login, pagamento online, banco de dados, backend ou bibliotecas externas.
+Cardápio estático em HTML, CSS e JavaScript puro, com 53 produtos, 7 adicionais, personalização, carrinho e finalização pelo WhatsApp. Sem login, pagamento online, banco de dados, backend ou bibliotecas externas.
 
 ## Estrutura
 
