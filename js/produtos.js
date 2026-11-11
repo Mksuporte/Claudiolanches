@@ -161,7 +161,7 @@ const CARDAPIO = Object.freeze({
     "categoria": "lanches",
     "nome": "X-fit",
     "descricao": "Pão fit, frango, queijo, tomate e alface",
-    "preco": 18,
+    "preco": 20,
     "adicionaisPermitidos": true,
     "imagem": "",
     "ativo": true
